@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - FlavorSprout</title>
+    <meta name="description" content="Browse our collection of delicious, easy-to-follow recipes for every occasion.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌱</span>
+                    <span class="logo-text">FlavorSprout</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="recipes.html" class="nav-link active">Recipes</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" style="padding: 3rem 0;">
+            <div class="container">
+                <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                    <h1 class="hero-title" style="font-size: 3rem;">Our Recipes</h1>
+                    <p class="hero-description">
+                        Discover delicious recipes tested in real home kitchens. From quick weeknight dinners to impressive desserts, find your next favorite dish.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-recipes-section">
+            <div class="container">
+                <div id="allRecipes" class="recipe-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌱</span>
+                        <span class="logo-text">FlavorSprout</span>
+                    </div>
+                    <p class="footer-description">Fresh recipes and cooking inspiration for everyday home cooks.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Connect</h3>
+                    <p class="footer-text">Follow us for daily recipe inspiration</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📌</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FlavorSprout. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookieConsent" class="cookie-consent hidden">
+        <div class="cookie-content">
+            <p class="cookie-text">
+                We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. 
+                <a href="cookie-policy.html" class="cookie-link">Learn more</a>
+            </p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Accept All</button>
+                <button id="declineCookies" class="btn btn-outline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="recipes-data.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

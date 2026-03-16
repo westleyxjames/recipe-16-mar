@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FlavorSprout</title>
+    <meta name="description" content="Get in touch with FlavorSprout. We'd love to hear from you!">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌱</span>
+                    <span class="logo-text">FlavorSprout</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" style="padding: 3rem 0;">
+            <div class="container">
+                <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+                    <h1 class="hero-title" style="font-size: 3rem;">Get In Touch</h1>
+                    <p class="hero-description">
+                        Have a question, suggestion, or just want to say hello? We'd love to hear from you!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div>
+                        <h2 style="font-size: 1.875rem; margin-bottom: 1.5rem;">Send Us a Message</h2>
+                        <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div class="form-row">
+                                <input type="text" placeholder="Your Name" required class="form-input">
+                                <input type="email" placeholder="Your Email" required class="form-input">
+                            </div>
+                            <input type="text" placeholder="Subject" required class="form-input">
+                            <textarea placeholder="Your Message" required class="form-textarea"></textarea>
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="contactConsent" required>
+                                <label for="contactConsent" style="font-size: 0.875rem; color: var(--color-gray-700); cursor: pointer;">
+                                    I agree to the <a href="privacy-policy.html" style="color: var(--color-green-600); text-decoration: underline;">Privacy Policy</a>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2 style="font-size: 1.875rem; margin-bottom: 1.5rem; color: var(--color-gray-900);">Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem; color: var(--color-gray-900);">Email</h3>
+                                <p style="color: var(--color-gray-600);">hello@flavorsprout.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem; color: var(--color-gray-900);">Address</h3>
+                                <p style="color: var(--color-gray-600);">
+                                    123 Recipe Street<br>
+                                    Foodie City, FC 12345<br>
+                                    United States
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem; color: var(--color-gray-900);">Phone</h3>
+                                <p style="color: var(--color-gray-600);">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h3 style="font-size: 1.125rem; margin-bottom: 0.25rem; color: var(--color-gray-900);">Business Hours</h3>
+                                <p style="color: var(--color-gray-600);">
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                    Saturday - Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container" id="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌱</span>
+                        <span class="logo-text">FlavorSprout</span>
+                    </div>
+                    <p class="footer-description">Fresh recipes and cooking inspiration for everyday home cooks.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Connect</h3>
+                    <p class="footer-text">Follow us for daily recipe inspiration</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">📌</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FlavorSprout. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cookieConsent" class="cookie-consent hidden">
+        <div class="cookie-content">
+            <p class="cookie-text">
+                We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. 
+                <a href="cookie-policy.html" class="cookie-link">Learn more</a>
+            </p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Accept All</button>
+                <button id="declineCookies" class="btn btn-outline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
